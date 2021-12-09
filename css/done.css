@@ -1,0 +1,33 @@
+body {
+  padding-top: 150px;
+  background-color: #EFF1F3;
+}
+
+.center {
+    background-color: #fff;
+    width: 45%;
+    text-align: center;
+    margin:7% auto;
+}
+
+h1{
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+h2{
+    margin-bottom: 1.5rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+.top:visited, .top:active, .top:link{
+color:#0066c0;
+text-decoration: none;
+}
+
+.top:hover {
+  color: #333;
+}

@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+body {
+  padding-top: 125px;
+  /* background-color: #efeeea;
+  color: #1c273e; */
+}
+
+.main {
+  display: flex;
+  margin: 50px auto 100px;
+  width: 95%;
+  /* text-align: center; */
+}
+.main_left {
+  width: 18%;
+}
+.main_right {
+  width: 82%;
+}
+
+/* メイン左 */
+.main_left h3 {
+  padding-bottom: 4px;
+  border-bottom: solid 1px #000;
+}
+.main_left h3:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.main_left li {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+.main_left li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.75rem;
+}
+
+/* メイン右 */
+.auto {
+  margin: auto;
+  width: 80%;
+}
+/* ポイント */
+.point {
+  display: flex;
+  justify-content: space-between;
+  /* margin: auto; */
+  margin-top: 20px;
+  padding: 10px 30px;
+  width: 100%;
+  background-color: #EFF1F3;
+  /* box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
+  border-radius: 25px; */
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.point_text {
+  line-height: 82px;
+  font-size: 1.2rem;
+}
+.point_num {
+  font-size: 2.4rem;
+}
+.pt {
+  font-size: 1.2rem;
+}
+
+/* 項目 */
+/* 購入履歴 */
+.project a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+.project ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  width: 100%;
+  /* background-color: #EFF1F3;
+  padding: 15px 0; */
+  /* border-bottom: solid 1px #c1c8ce;
+  padding-bottom: 15px; */
+}
+.project li {
+  position: relative;
+  width: 25%;
+  list-style: none;
+  text-align: center;
+}
+.project li img {
+  display: inline-block;
+  width: 23%;
+}
+.project li p {
+  margin-top: 8px;
+}
+.project li:not(:last-child) {
+  border-right: solid 1px #c1c8ce;
+}
+
+
+
+/* 退会手続き */
+.leave_auto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+.leave_auto h3:not(:first-child) {
+  margin-top: 4%;
+}
+.leave_auto form {
+  margin: auto;
+  width: 80%;
+}
+.leave_auto input {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: .8rem;
+  height: 60px;
+  padding: 15px 10px;
+  margin-top: 1%;
+  width: 100%;
+}
+.leave_auto input:focus {
+  border: 1px solid #333;
+}
+/* 退会しないボタン */
+.leavebtn_auto {
+  width: 35%;
+  margin: 2rem auto 0;
+}
+.arrow_btn {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding: 0.8em;
+  margin: .5rem 0;
+  box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background: #fff;
+	border:1px solid #c1c8ce;
+	transition: transform ease .3s;
+}
+.backbtn:hover {
+  border:1px solid #333;
+}
+/* 退会するボタン */
+.leavebtn {
+  background-color: #808080;
+  color: #fff;
+  border: none;
+}
+
+
+
+
+/* パスワード変更 */
+.leave_auto p {
+  margin-top: 1%;
+  font-size: .7rem;
+  color: #808080;
+}
+/* 変更ボタン */
+.passbtn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+.leave_auto .passerr {
+  color: red;
+}
+
+
+
+/* パスワード変更後 */
+.passfinish_auto {
+  margin: auto;
+  width: 60%;
+}
+.passfinish_auto .pass_finish {
+  padding: 20%;
+  margin-bottom: 10%;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
+  text-align: center;
+}
+.passfinish_btn {
+  width: 35%;
+  margin: auto;
+}
+.pass_finish p {
+  font-size: 1rem;
+}
+
+
+
+
+/* 購入履歴 */
+.bought_auto {
+  margin: auto;
+  width: 80%;
+}
+.bought_auto h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2%;
+}
+.btflex {
+  display: flex;
+  flex-direction: column;
+}
+.btwra {
+  display: flex;
+  margin-bottom: 5%;
+  padding: 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
+  border-radius: 3px;
+}
+.btwra img {
+  margin-right: 5%;
+}
+.bought_text strong {
+  font-size: 1rem;
+}
+
+
+
+
+/* お客様情報の変更 */
+/* 必須 */
+ .to {
+  color: red;
+  border: solid 1px red;
+  font-size: .7rem;
+  padding: .1rem .2rem;
+  margin-left: 2%;
+}

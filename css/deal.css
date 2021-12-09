@@ -1,0 +1,194 @@
+/* pay */
+@charset 'utf-8';
+body {
+  padding-top: 150px;
+  background-color: #EFF1F3;
+}
+
+main {
+  margin: 40px auto;
+  width: 90%;
+}
+
+/*配置設定*/
+.contents_flex {
+  width: auto;
+ display: flex;
+ margin: 0 0 2rem 0;
+}
+.contents_1 {
+  width:80%;
+}
+
+.customer_aria {
+  margin: 0 0 1.5rem 0;
+  background-color: #fff;
+  position: relative;
+  padding: 1.5rem 0 1rem 1.5rem;
+}
+
+.product_aria {
+  margin: 0 0 2rem 0;
+  background-color: #fff;
+  position: relative;
+  padding: 0.5rem 0 1rem 1.5rem;
+}
+
+.settlement_aria {
+  width: 40%;
+  position: fixed;
+  margin: 0 0 2rem 40px;
+  position: relative;
+}
+
+/*個人情報*/
+.p_info {
+  display: flex;
+}
+
+.user {
+  padding-right: 6rem;
+}
+
+.mail {
+  padding-top: 1rem;
+}
+
+/*カート中身*/
+.cart_flex {
+  display: flex;
+}
+
+.cart {
+margin-bottom: 1.5rem;
+display: inline-block;
+}
+
+.cart_edit {
+  margin-top: 1rem;
+  display: inline-block;
+  margin-left: 12.5rem;
+}
+
+.imgs {
+  margin: 0 1rem 1.5rem 0;
+}
+
+.price_flex {
+  display: flex;
+  margin: 1rem 0 0 15rem;
+}
+
+.price_text_2 {
+  margin-left: 1rem;
+}
+
+/*ボタン*/
+.btn_btn-blue {
+  display: inline-block;
+  padding: 0.8rem 0;
+  margin: 1rem 0rem 0.5rem 0rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: solid 1px #333;
+  background: #333;
+  transition: .4s;
+}
+.btn_btn-blue:hover {
+  background: rgba(0,0,0,0);
+  color: #333;
+
+}
+/*決済方法*/
+.settle_method {
+  padding: 1rem 1rem 1rem 1.5rem;
+  width: 90%;
+  background-color: #fff;
+}
+
+
+label{
+  display:block;
+}
+/*所持ポイント*/
+div.points {
+  margin-top: 1rem;
+}
+
+p.points {
+  padding: 0.3rem 0 0 0;
+}
+
+/*利用ポイント*/
+div.use_p {
+  margin: 0.5rem 0 0 0;
+}
+
+input.use_p {
+  width: 30%;
+  text-align: right;
+}
+
+/*送料*/
+div.shipping {
+  margin: 0.5rem  0 0 0;
+}
+
+p.shipping {
+  padding: 1.2rem 0 0 0;
+}
+
+/*合計*/
+h2.total {
+margin: 0.8rem 0 0 0;
+}
+
+h3.total {
+  padding: 1.25rem 0 0 0;
+}
+
+.edit:visited, .edit:active, .edit:link{
+color: #333;
+text-decoration: none;
+}
+
+.edit:hover {
+  color:#0066c0;
+}
+
+.leave_auto h2 {
+  margin-bottom: 2%;
+}
+.leave_auto h3:not(:first-child) {
+  margin-top: 4%;
+}
+.leave_auto form {
+  margin: auto;
+  width: 80%;
+}
+
+.leave_auto input {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: .8rem;
+  height: 40px;
+  padding: 15px 10px;
+  margin-top: 1%;
+  width: 100%;
+}
+.leave_auto input:focus {
+  border: 1px solid #333;
+}
+
+.to {
+  color: red;
+  border: solid 1px red;
+  font-size: .7rem;
+  padding: .1rem .2rem;
+  margin-left: 2%;
+}

@@ -1,0 +1,190 @@
+@charset 'utf-8';
+* {
+  margin:0;
+  padding:0;
+  border:none;
+  list-style:none;
+}
+body {
+  padding-top: 130px;
+}
+
+.login {
+  margin: 3% 0 8%;
+}
+
+.login form {
+  margin: auto;
+  background:#f7f7f7;
+  width:35%;
+  padding: 1.5rem 0 2.5rem;
+}
+
+input {
+  background:#fff;
+  color:#333;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0 10px;
+  height: 50px;
+  width:100%;
+  box-sizing: border-box;
+}
+input:focus {
+  border: 1px solid #333;
+}
+button {
+  margin-top: 1rem;
+  padding:12px 17px;
+  width:100%;
+  font-size:1.2em;
+  background:#333;
+  color:#f4f4f4;
+  font-family: Cinzel, "Noto Serif JP", serif;
+  cursor:pointer;
+  border: solid 1px #333;
+  transition: .4s;
+}
+
+button:active {
+  top:3px;
+  box-shadow:none;
+}
+button:hover {
+  background: rgba(0,0,0,0);
+  color: #333;
+}
+.roginfont{
+  font-size: 15px;
+}
+h2{
+  color: #333;
+  font-family: Cinzel, "Noto Serif JP", serif;
+  font-size: 1rem;
+  text-align:center;
+}
+h3 {
+  margin-bottom: 1.5%;
+}
+h5 {
+  margin-top: .5rem;
+  font-size: .7rem;
+}
+.login_margin{
+  margin: auto;
+  width: 72%;
+  margin-top: 1rem;
+}
+.login_margin p {
+  margin-top: 1.5%;
+  font-size: .7rem;
+  color: #333;
+}
+.loginname {
+  font-size: 1.2rem;
+}
+
+/* 新規会員登録 */
+.new_member {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1px #c1c8ce;
+  width: 72%;
+  height: 60px;
+  text-align: center;
+  margin: 1rem auto 0;
+  box-sizing: border-box;
+  transition: .4s;
+}
+.new_member a {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  line-height: 60px;
+  text-decoration: none;
+  color: #333;
+}
+.new_member:hover {
+  background-color: #333;
+}
+.new_member:hover a {
+  color: #fff;
+}
+
+/* 必須 */
+.to {
+ color: red;
+ border: solid 1px red;
+ font-size: .7rem;
+ padding: .1rem .2rem;
+ margin-left: 2%;
+}
+
+/* 会員登録後 */
+.lgfinish_auto {
+  margin: 4% auto;
+  width: 50%;
+}
+.lg_finish {
+  padding: 20%;
+  margin-bottom: 8%;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 2rem rgb(0 0 0 / 10%);
+  text-align: center;
+}
+.lgfinish_btn {
+  width: 35%;
+  margin: auto;
+}
+.lg_finish p {
+  font-size: 1rem;
+}
+.arrow_btn {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding: 0.8em;
+  box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background: #fff;
+	border:1px solid #c1c8ce;
+	transition: .4s;
+}
+.arrow_btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+/* 適当に新しく追加してみました。デザイン考慮してないです。 */
+.account_padding {
+  margin-bottom: 10px;
+}
+.form-footer {
+  font-size: 1em;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.form-footer a {
+  color: #333;
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+.form-footer a:hover {
+  border-bottom: 1px dotted #fefefe;
+}
+
+.form-footer p:last-child {
+  margin-top: 10px;
+  padding: 100px;
+}
+
+.form-footer p a input:hover {
+  background-color: #f16272;
+}

@@ -1,0 +1,297 @@
+@charset 'utf-8';
+
+/* 基本要素の指定 */
+* {
+  margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body {
+  font-family: Cinzel, "Noto Serif JP", serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #FFF;
+  line-height: 1.75;
+  letter-spacing: .2em;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding-bottom: 60px;/*←footerの高さ*/
+  box-sizing: border-box;
+}
+
+/* p要素の指定 */
+p {
+  margin-top: 0;
+}
+
+/* メインビジュアル */
+.mainvisual {
+  height: 100vh;
+  background-image: url(../images/main.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* メインビジュアル中のテキストを非表示 */
+.mainvisual p {
+  visibility: hidden;
+}
+
+/* 「新宿駅」徒歩3分～のやつ */
+.merit {
+  width: 100%;
+}
+.meritList {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.meritList li {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+  text-align: center;
+  background: #072948;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  letter-spacing: .2em;
+  width: calc(100%/3);
+}
+.lastmerit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+}
+.meritList .line::before {
+    content: "";
+    position: absolute;
+    top: 1.2rem;
+    left: 0;
+    width: .04rem;
+    height: 53%;
+    background: #fff;
+}
+.merit li strong {
+  font-size: 1.175em;
+  line-height: 1;
+  font-weight: normal;
+}
+.merit li .num {
+  font-size: 1.8em;
+}
+/* 資料請求・来場予約 */
+.entryBtn {
+  width: 100%;
+}
+.entryBtn li {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  width: 50%;
+  transition: .3s;
+}
+.entryBtn li:hover {
+  opacity: .9;
+}
+.info, .reserve {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+.entryBtn ul li .info {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  font-size: 1.4rem;
+  background:linear-gradient(to right, #8e7a42 0%,#c7b753 50%,#8e7a42 100%);
+}
+.entryBtn ul li .reserve {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  font-size: 1.4rem;
+  background-image:linear-gradient(to right, #7c5219 0%,#ac7b1f 50%,#7c5219 100%);
+}
+
+/* いい感じの言葉 */
+.word {
+  height: 80vh;
+}
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 2s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+.js-animation p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 80vh;
+}
+
+/* インテリア */
+.top_interior {
+  width: 90%;
+  margin: auto;
+}
+/* インテリア・メイン */
+.top_interior_main {
+  display: flex;
+  padding-bottom: 43px;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  /* height: calc((5 / 8) * width); */
+}
+  /* インテリア（左側 -画像-） */
+.top_interior_left {
+  background-image: url(../images/interior.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 67%;
+}
+  /* インテリア（右側 -家具一覧を見る-） */
+.top_interior_right {
+  position: relative;
+  width: 33%;
+  padding-top: 40%;
+  background-color: #EEE;
+}
+    /* 中央揃え */
+.top_interior_right_central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+  text-align: center;
+}
+    /* 文字（インテリア） */
+.top_interior_right_text {
+  padding-bottom: 3.5rem;
+  text-align: center;
+}
+.top_interior_right_text .main { /* インテリア */
+  display: block;
+  font-size: 1.75rem;
+}
+.top_interior_right_text .sub { /* INTERIOR */
+  display: block;
+  font-size: 0.875rem;
+}
+    /* ボタン（家具一覧を見る） */
+.top_interior_right_btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: #333;
+  border: solid 1px #333;
+  transition: .4s;
+}
+.top_interior_right_btn:hover {
+  background: #333;
+  color: white;
+}
+/* 家具見本 */
+.top_interior_sample {
+  display: flex;
+  justify-content: space-between;
+}
+.top_interior_sample a {
+  width: 22%;
+}
+.top_interior_sample .sample_img {
+  width: 100%;
+  height: auto;
+  transition: .3s;
+}
+.top_interior_sample img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+}
+
+/* シミュレーション */
+.top_simulation {
+  margin: 100px auto 0;
+  height: 600px;
+  background-image: url(../images/simulation.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top_simulation_opa {
+  position: relative;
+  height: 600px;
+  background-color: rgba(0,0,0,0.4);
+}
+.top_simulation_central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+}
+  /* シミュレーション・h2 */
+.top_simulation_text {
+  text-align: center;
+}
+.top_simulation_text .main { /* シミュレーション */
+  display: block;
+  font-size: 1.75rem;
+}
+.top_simulation_text .sub { /* SIMULATION */
+  display: block;
+  font-size: 0.875rem;
+}
+  /* シミュレーション・p */
+.top_simulation_central p {
+  margin-top: 50px;
+  line-height: 3;
+  letter-spacing: 2px;
+}
+  /* ボタン（START）*/
+.top_simulation_btn {
+  display: inline-block;
+  margin: auto;
+  margin-top: 50px;
+  padding: 1em 7em;
+  text-decoration: none;
+  color: #fff;
+  border: solid 1px #fff;
+  transition: .4s;
+}
+.top_simulation_btn:hover {
+  background: #fff;
+  color: #333;
+}
+
+/* フッター */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+	height: 60px;
+  text-align: center;
+	background: #072948;
+}
+.footer small {
+  line-height: 60px;
+  color: #81A3C2;
+  letter-spacing: .1em;
+  font-size: .7rem;
+}

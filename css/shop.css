@@ -1,0 +1,157 @@
+body {
+  padding-top: 125px;
+}
+.main {
+  display: flex;
+  align-items: baseline;
+  margin: 30px auto 100px;
+  width: 95%;
+}
+.left {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 165px;
+  width: 24%;
+}
+.right {
+  width: 76%;
+}
+
+/* カテゴリ一覧 */
+
+/* 検索ボックス */
+#form1 {
+  background-color: white;
+  width:200px;
+  height: 30px;
+  border: 1px #999 solid;
+  margin-top: 6%;
+  border-radius: 3px;
+}
+#form1 input {
+  vertical-align: top;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+#sbox1 {
+  border: none;
+  outline:0;
+  width: 170px;
+  padding:.5rem 10px;
+}
+#sbtn1 {
+  width: 30px;
+  border:none;/*検索ボタンの枠線を消す*/
+  background-image: url(../images/loupe.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+h2.ctlist {
+border-bottom:solid 3px #c7b753;
+display: inline-block;
+}
+
+.category li {
+display: list-item;  /* 縦に並べる */
+list-style-type: none;
+text-transform: uppercase;
+margin-top: 3%;
+font-size: .9rem;
+}
+
+.category li .nav_furniture{
+position: relative;
+text-decoration: none;
+cursor: pointer;
+}
+
+.nav_furniture:visited, .nav_furniture:active, .nav_furniture:link{
+color: #333;
+}
+
+.nav_furniture:before {
+content: ""; /*疑似要素の中身は空（記述は必須）*/
+position: absolute; /*子要素として疑似要素を固定*/
+left: 0; /*長さはテキストの両端まで*/
+right: 0; /*長さはテキストの両端まで*/
+bottom: -5px;  /*線の上下位置*/
+width: 100%; /*線の長さ*/
+height: 1.5px; /*線の太さ*/
+background-color:#728190; /*線の色*/
+transform: scale(0, 1); /*横方向に0状態から全体まで線を入れる*/
+transform-origin: left; /*左端を起点にアニメーション*/
+transition: .3s; /*アニメーションの時間*/
+}
+
+#check .nav_furniture:before {
+  transform: scale(1);
+}
+#check .nav_furniture {
+  color: #728190
+}
+.nav_furniture:hover:before {
+transform: scale(1); /*ホバー時に等倍へ拡大*/
+}
+
+.nav_furniture:hover{
+color: #728190;
+}
+/* 商品件数表示 */
+h2.product {
+font-size: 30px;
+}
+
+h3{
+font-size: 18px;
+}
+/* 商品表示エリア */
+div.shelf {
+  display: flex;
+  flex-wrap: wrap;
+/* margin: 260px 0 30px 370px ; */
+}
+
+/* 商品 */
+div.item{
+margin: 1.5rem 2rem 1.5rem 0;
+display: inline-block;
+}
+.item .pdname{
+font-size: 1rem;
+font-family :
+YuMincho,    /* Mac用 */
+'Yu Mincho', /* Windows用 */
+serif;
+}
+
+.item .price{
+margin-top: .1rem;
+font-size: .7rem;
+font-family:'メイリオ', 'Meiryo', sans-serif;
+color: #333;
+}
+
+img.bet {
+width: 240px;
+height: 240px;
+}
+/* カートに入れるボタン */
+.btn {
+display: inline-block;
+margin-top: .7rem;
+width: 100%;
+padding: 4% 0;
+text-decoration: none;
+background-color: rgba(0, 0, 0, 0);
+color: #333;
+border: solid 1px #333;
+transition: .4s;
+}
+.btn:hover {
+background: #333;
+color: white;
+}

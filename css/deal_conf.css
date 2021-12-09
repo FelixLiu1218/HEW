@@ -1,0 +1,96 @@
+body {
+  padding-top: 150px;
+  background-color: #EFF1F3;
+}
+
+/*area分け*/
+
+.info_area {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #fff;
+    position: relative;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    display: flex;
+}
+
+.buy_date {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #fff;
+    position: relative;
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
+
+/* infoエリア　*/
+.info_flex1 {
+    margin-right: 10rem;
+}
+
+h2.mail,h2.number,h3.ad_num,h3.address {
+    margin-top: 0.8rem;
+}
+
+/*buy_dateエリア*/
+p.method {
+    padding-top: 0.8rem;
+}
+
+p.use_p {
+    padding-top: 0.8rem;
+}
+
+p.remain_p {
+    padding-top: 0.8rem;
+}
+
+p.total {
+    padding-top: 0.8rem;
+}
+
+p.return {
+    text-align: right;
+}
+
+/*確認メッセージ*/
+.confirmation {
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+div.deal_sum_btn {
+    text-align: center;
+}
+
+.sum_btn {
+  display: inline-block;
+  padding: 0.8rem 0;
+  margin: 1rem 0 1.3rem;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: solid 1px #333;
+  background: #333;
+  transition: .4s;
+}
+.sum_btn:hover {
+  background: rgba(0,0,0,0);
+  color: #333;
+}
+
+.sum_btn2 {
+  display: inline-block;
+  padding: 0.8rem 0;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  border: solid 1px #c1c8ce;
+  color: #333;
+  transition: .4s;
+}
+.sum_btn2:hover {
+  border: solid 1px #333;
+  background-color: #333;
+  color: #fff;
+}
